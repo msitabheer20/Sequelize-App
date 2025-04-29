@@ -2,20 +2,20 @@ import { DataTypes } from 'sequelize';
 import sequelize from '../config/database.js';
 
 const Task = sequelize.define('Task', {
-  title: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  description: {
-    type: DataTypes.TEXT,
-    allowNull: true,
-  },
-  completed: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false,
-  },
+    title: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    description: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+    },
+    completed: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+    },
 }, {
-  timestamps: true,
+    timestamps: true,
 });
 
 export default Task;
